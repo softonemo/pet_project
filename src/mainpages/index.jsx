@@ -29,7 +29,7 @@ function MainPage() {
           height: '100vh',
         }}
       >
-        <h2>ldkkek</h2>
+        <h2>ldkkekldkgmlks,ml</h2>
       </div>
     </div>
   );
