@@ -61,33 +61,40 @@ function Header() {
         </ul>
       </animated.div>
       <div className="header">
-        <div
-          className="right_header"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        >
-          <p>Follow</p>
-          <p>Provider/Privacy</p>
-        </div>
+        <animated.div style={isVisible ? animationProps : animation} className="right_header">
+          <div
+            className="right_header"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <p>Follow</p>
+            <p>Provider/Privacy</p>
+          </div>
+        </animated.div>
         <button style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
           <img onClick={repload} className="main_logo_png" src={mainLogo} alt="" />
         </button>
-        <div
+        <animated.div
           className="login_search_common"
-          data-aos="fade-down"
-          data-aos-duration="1000"
-          data-aos-delay="200"
+          style={isVisible ? animationProps : animation}
         >
-          <div className="search_part">
-            <p>Search</p>
-            <img src={searchLogo} alt="" />
+          <div
+            className="login_search_common"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <div className="search_part">
+              <p>Search</p>
+              <img src={searchLogo} alt="" />
+            </div>
+            <div className="login_part">
+              <p>Login</p>
+              <img src={loginLogo} alt="" />
+            </div>
           </div>
-          <div className="login_part">
-            <p>Login</p>
-            <img src={loginLogo} alt="" />
-          </div>
-        </div>
+        </animated.div>
       </div>
     </>
   );

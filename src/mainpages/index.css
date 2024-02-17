@@ -1,11 +1,160 @@
-.container{
-    overflow-x: hidden;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@300;400&family=Playfair+Display:ital,wght@0,500;1,500&family=Protest+Riot&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.mainVideo{
-    width: 140%;
+.container {
+  overflow-x: hidden;
 }
-.block_with_mainVideo{
-    width: 100%;
-    height: 900px;
+.contain {
+  padding: 88px 215px 250px;
+}
+.contain img:hover {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="290" height="292" viewBox="0 0 290 292" fill="none"><ellipse cx="145" cy="146" rx="145" ry="146" fill="#D9D9D9"/><path d="M49.25 182V123.818H74.3636C78.6818 123.818 82.4602 124.604 85.6989 126.176C88.9375 127.748 91.4564 130.011 93.2557 132.966C95.0549 135.92 95.9545 139.462 95.9545 143.591C95.9545 147.758 95.0265 151.271 93.1705 154.131C91.3333 156.991 88.7481 159.15 85.4148 160.608C82.1004 162.066 78.2273 162.795 73.7955 162.795H58.7955V150.523H70.6136C72.4697 150.523 74.0511 150.295 75.358 149.841C76.6837 149.367 77.697 148.619 78.3977 147.597C79.1174 146.574 79.4773 145.239 79.4773 143.591C79.4773 141.924 79.1174 140.57 78.3977 139.528C77.697 138.468 76.6837 137.691 75.358 137.199C74.0511 136.687 72.4697 136.432 70.6136 136.432H65.0455V182H49.25ZM83.3409 155.295L97.8864 182H80.7273L66.5227 155.295H83.3409ZM122.886 182.795C118.227 182.795 114.212 181.905 110.841 180.125C107.489 178.326 104.903 175.75 103.085 172.398C101.286 169.027 100.386 164.992 100.386 160.295C100.386 155.788 101.295 151.848 103.114 148.477C104.932 145.106 107.498 142.483 110.812 140.608C114.127 138.733 118.038 137.795 122.545 137.795C125.841 137.795 128.824 138.307 131.494 139.33C134.165 140.352 136.447 141.839 138.341 143.79C140.235 145.722 141.693 148.07 142.716 150.835C143.739 153.6 144.25 156.716 144.25 160.182V163.818H105.273V155.182H129.818C129.799 153.932 129.477 152.833 128.852 151.886C128.246 150.92 127.422 150.172 126.381 149.642C125.358 149.093 124.193 148.818 122.886 148.818C121.617 148.818 120.453 149.093 119.392 149.642C118.331 150.172 117.479 150.911 116.835 151.858C116.21 152.805 115.879 153.913 115.841 155.182V164.5C115.841 165.902 116.134 167.152 116.722 168.25C117.309 169.348 118.152 170.21 119.25 170.835C120.348 171.46 121.674 171.773 123.227 171.773C124.307 171.773 125.292 171.621 126.182 171.318C127.091 171.015 127.867 170.58 128.511 170.011C129.155 169.424 129.629 168.723 129.932');
+}
+.scroll_block {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.mainVideo {
+  width: 140%;
+}
+.block_with_mainVideo {
+  border-bottom: 1px solid #ccc;
+}
+.welcome_to_beyond {
+  border-bottom: 1px solid #ccc;
+}
+.first_block_with_gif {
+  position: absolute;
+  text-align: left;
+  left: 14%;
+  top: 50%;
+}
+.first_block_with_gif h1 {
+  font-family: 'Playfair Display' !important;
+  font-weight: 500;
+  font-size: 30px;
+  color: white;
+}
+.second_block_welcome {
+  text-align: left;
+  position: absolute;
+  top: 150%;
+  left: 9%;
+  color: white;
+}
+.second_block_welcome h3 {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 40px;
+}
+.second_block_welcome p {
+  font-family: sans-serif;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.brandhub-relaunch-button__icon {
+  width: 14px;
+  margin-left: 5px;
+}
+.button_discover_more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  background-color: white;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 30px;
+  padding: 7px 15px;
+  border-radius: 20px;
+  border: none;
+}
+.button_discover_more:hover {
+  background-color: #0078d6;
+  color: white;
+  cursor: pointer;
+}
+.first_after_first {
+  display: flex;
+  gap: 150px;
+  margin-top: 100px;
+}
+.first_after_first p {
+  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
+.first_after_first h3 {
+  font-family: 'Playfair Display';
+  font-size: 30px;
+  font-weight: 100;
+  margin-top: 20px;
+}
+.first_after_first img {
+  transition: 0.5s;
+  display: block;
+}
+.first_after_first img:hover {
+  transform: scale(1.05);
+}
+.blockOver img {
+  width: 400px;
+}
+.blockOver {
+  overflow: hidden;
+  width: 400px;
+  height: 528px;
+  margin-top: 20px;
+}
+.blockOverSecond {
+  position: relative;
+  overflow: hidden;
+  width: 510px;
+  height: 300px;
+  margin-top: 20px;
+}
+.second_dreams img {
+  width: 540px;
+}
 
+.block_inclusion {
+  text-align: left;
+  overflow: hidden;
+}
+.second_dreams {
+  overflow: hidden;
+  margin-top: 30%;
+  text-align: left;
+}
+.first_block_defining div {
+  text-align: left;
+}
+.first_block_defining div:nth-child(2) {
+  text-align: left;
+  margin-top: 40%;
+}
+.second_block_prize {
+  margin-top: 10%;
+  text-align: left;
+}
+.definOver {
+  width: 400px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.definOver img {
+  width: 400px;
+}
+.iconsOver {
+  width: 540px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.iconsOver img {
+  width: 540px;
 }

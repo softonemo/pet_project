@@ -1,49 +1,148 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import mainVideo from './images/clideo_editor_bae05325d07c4d3c8488d817fe9ee247.gif';
 import girlWith from './images/girl_with_merc.avif';
 import './index.css';
-import ReactFullpage from '@fullpage/react-fullpage'; 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import firstImg from './images/first.png';
+import secondImg from './images/second.png';
+import thirdImg from './images/third.png';
+import fourthImg from './images/fourth.png';
+import fifthImg from './images/fifth.png';
+
+AOS.init();
 
 function MainPage() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const upperSection = document.getElementById('section1');
+      const upperSectionTop = upperSection.getBoundingClientRect().top + window.scrollY - '71px';
+
+      // Проверяем, если верхняя секция полностью вышла за пределы видимой области
+      if (scrollTop > upperSectionTop) {
+        const lowerSection = document.getElementById('section2');
+        if (lowerSection) {
+          lowerSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
-    <ReactFullpage
-      licenseKey={'YOUR_KEY_HERE'}
-      scrollingSpeed={1000}
-      sectionsColor={['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']}
-      anchors={['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage']}
-      menu='#menu'
-      css3={true}
-      render={({ state, fullpageApi }) => {
-        return (
-          <div id="fullpage">
-            <div
-              className="section block_with_mainVideo"
-              style={{
-                backgroundImage: `url(${mainVideo})`,
-                backgroundSize: 'cover',
-                scale: '1.2',
-                height: 'calc(100vh)',
-              }}
+    <div className="container">
+      <div className="scroll_block">
+        <section
+          className="block_with_mainVideo"
+          id="section1"
+          style={{
+            backgroundImage: `url(${mainVideo})`,
+            backgroundSize: 'cover',
+            scale: '1.2',
+            height: 'calc(100vh)',
+            position: 'relative',
+          }}
+        >
+          <div className="first_block_with_gif">
+            <h1>DEFINING CLASS</h1>
+            <button
+              className="button_discover_more"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
             >
-              <div>
-                <h1>ddddddd</h1>
-                <button>dddd</button>
-              </div>
-            </div>
-            <div
-              className="section welcome_to_beyond"
-              style={{
-                backgroundImage: `url(${girlWith})`,
-                backgroundSize: 'cover',
-                height: '100vh',
-              }}
-            >
-              <h2>ldkkekldkgmlks,ml</h2>
+              Discover more
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                className="brandhub-relaunch-button__icon"
+              >
+                <path
+                  fill="currentColor"
+                  fill-rule="evenodd"
+                  d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </section>
+        <section
+          id="section2"
+          className="welcome_to_beyond"
+          style={{
+            backgroundImage: `url(${girlWith})`,
+            backgroundSize: 'cover',
+            height: '100vh',
+          }}
+        >
+          <div className="second_block_welcome">
+            <h3>Welcome To Beyond</h3>
+            <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+              <p>Welcome to Merceders-Maybach.</p>
+              <button className="button_discover_more">
+                Discover more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="brandhub-relaunch-button__icon"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
+                  ></path>
+                </svg>
+              </button>
             </div>
           </div>
-        );
-      }}
-    />
+        </section>
+      </div>
+      <div className="contain">
+        <section className="first_after_first">
+          <div className="block_inclusion">
+            <p>Responsibility</p>
+            <h3>Inclusion is unstoppable.</h3>
+            <div className="blockOver">
+              <img src={firstImg} alt="" />
+            </div>
+          </div>
+          <div className="second_dreams">
+            <p>Future Mobility</p>
+            <h3>Neon Dreams.</h3>
+            <div className="blockOverSecond ">
+              <img src={secondImg} alt="" />
+            </div>
+          </div>
+        </section>
+        <section className="first_after_first">
+          <div className="first_block_defining">
+            <div>
+              <p>Milestones</p>
+              <h3>Defining Class since 1886.</h3>
+              <div className="definOver">
+                <img src={thirdImg} alt="" />
+              </div>
+            </div>
+            <div>
+              <p>Vehicles</p>
+              <h3>The MANUFAKTUR - Icons of Unique.</h3>
+              <div className="definOver">
+                <img src={fifthImg} alt="" />
+              </div>
+            </div>
+          </div>
+          <div className="second_block_prize">
+            <p>Exlusive</p>
+            <h3>Mercedes-Benz' new Sustainability Prize</h3>
+            <div className="iconsOver">
+              <img src={fourthImg} alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }
 
