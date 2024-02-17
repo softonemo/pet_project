@@ -1,8 +1,9 @@
 import React from 'react';
-import './App.css'; // Подключаем стили
+import './App.css'; 
 import Header from './header';
 import { Route, Routes } from 'react-router-dom';
 import MainPage from './mainpages';
+import Footer from './footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<MainPage />} />
         </Routes>
       </div>
+      <Footer/>
     </>
   );
 }
