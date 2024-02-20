@@ -1,14 +1,15 @@
 import React, { useEffect } from 'react';
-import mainVideo from './images/clideo_editor_bae05325d07c4d3c8488d817fe9ee247.gif';
-import girlWith from './images/girl_with_merc.avif';
+import mainVideo from '../images/MainPageImages/clideo_editor_bae05325d07c4d3c8488d817fe9ee247.gif';
+import girlWith from '../images/MainPageImages/girl_with_merc.avif';
 import './index.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import firstImg from './images/first.png';
-import secondImg from './images/second.png';
-import thirdImg from './images/third.png';
-import fourthImg from './images/fourth.png';
-import fifthImg from './images/fifth.png';
+import firstImg from '../images/MainPageImages/first.png';
+import secondImg from '../images/MainPageImages/second.png';
+import thirdImg from '../images/MainPageImages/third.png';
+import fourthImg from '../images/MainPageImages/fourth.png';
+import fifthImg from '../images/MainPageImages/fifth.png';
+import { Link } from 'react-router-dom';
 
 AOS.init();
 
@@ -19,7 +20,6 @@ function MainPage() {
       const upperSection = document.getElementById('section1');
       const upperSectionTop = upperSection.getBoundingClientRect().top + window.scrollY - '71px';
 
-      // Проверяем, если верхняя секция полностью вышла за пределы видимой области
       if (scrollTop > upperSectionTop) {
         const lowerSection = document.getElementById('section2');
         if (lowerSection) {
@@ -47,25 +47,27 @@ function MainPage() {
         >
           <div className="first_block_with_gif">
             <h1>DEFINING CLASS</h1>
-            <button
-              className="button_discover_more"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="300"
-            >
-              Discover more
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                className="brandhub-relaunch-button__icon"
+            <Link to="/definingPage">
+              <button
+                className="button_discover_more"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="300"
               >
-                <path
-                  fill="currentColor"
-                  fill-rule="evenodd"
-                  d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
-                ></path>
-              </svg>
-            </button>
+                Discover more
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  className="brandhub-relaunch-button__icon"
+                >
+                  <path
+                    fill="currentColor"
+                    fill-rule="evenodd"
+                    d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
+                  ></path>
+                </svg>
+              </button>
+            </Link>
           </div>
         </section>
         <section

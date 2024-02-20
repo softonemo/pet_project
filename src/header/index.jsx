@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import mainLogo from './images/Mercedes-Logo.svg.png';
-import searchLogo from './images/icon-search.svg';
-import loginLogo from './images/down-arrow-54.svg';
+import mainLogo from '../images/HeaderImages/Mercedes-Logo.svg.png';
+import searchLogo from '../images/HeaderImages/icon-search.svg';
+import loginLogo from '../images/HeaderImages/down-arrow-54.svg';
 import './index.css';
 import { useSpring, animated } from 'react-spring';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Link } from 'react-router-dom';
 
 AOS.init();
 
@@ -18,10 +19,8 @@ function Header() {
       const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
       if (currentScrollTop > lastScrollTop) {
-        // Скролл вниз
         setIsVisible(false);
       } else {
-        // Скролл вверх
         setIsVisible(true);
       }
       setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
@@ -45,9 +44,9 @@ function Header() {
     easing: 'easeInOut',
     delay: 300,
   });
-  const repload = () => {
-    window.location.reload();
-  };
+  // const repload = () => {
+  //   window.location.reload();
+  // };
   return (
     <>
       <animated.div className="blur_header" style={isVisible ? animationProps : animation}>
@@ -72,9 +71,11 @@ function Header() {
             <p>Provider/Privacy</p>
           </div>
         </animated.div>
-        <button style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
-          <img onClick={repload} className="main_logo_png" src={mainLogo} alt="" />
-        </button>
+        <Link to="/">
+          <button style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+            <img className="main_logo_png" src={mainLogo} alt="" />
+          </button>
+        </Link>
         <animated.div
           className="login_search_common"
           style={isVisible ? animationProps : animation}

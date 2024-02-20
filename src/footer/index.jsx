@@ -66,8 +66,8 @@ function Footer() {
                 className="brandhub-icon brandhub-social-media-box-item__icon"
                 data-aos="fade"
                 data-aos-duration="1000"
-                data-aos-once="false"
                 data-aos-delay="300"
+                data-aos-once="false"
               >
                 <path
                   fill="currentColor"
@@ -93,8 +93,8 @@ function Footer() {
                 className="brandhub-icon brandhub-social-media-box-item__icon"
                 data-aos="fade"
                 data-aos-duration="1000"
-                data-aos-once="false"
                 data-aos-delay="300"
+                data-aos-once="false"
               >
                 <path
                   fill="currentColor"
@@ -113,8 +113,8 @@ function Footer() {
                 className="brandhub-icon brandhub-social-media-box-item__icon"
                 data-aos="fade"
                 data-aos-duration="1000"
-                data-aos-once="false"
                 data-aos-delay="300"
+                data-aos-once="false"
               >
                 <path
                   fill="currentColor"
@@ -132,8 +132,8 @@ function Footer() {
                 className="brandhub-social-media-box-item__icon brandhub-social-media-box-item__wb"
                 data-aos="fade"
                 data-aos-duration="1000"
-                data-aos-once="false"
                 data-aos-delay="300"
+                data-aos-once="false"
               >
                 <path d="M20.354 0H1.622C.727 0 0 .71 0 1.584v18.811c0 .875.727 1.586 1.622 1.586h18.732c.897 0 1.627-.711 1.627-1.586V1.584C21.982.71 21.251 0 20.354 0zM6.519 18.731h-3.26V8.241H6.52v10.49zM4.89 6.807a1.89 1.89 0 1 1 0-3.782 1.89 1.89 0 0 1 0 3.782zm13.841 11.924h-3.258V13.63c0-1.216-.022-2.781-1.694-2.781-1.696 0-1.957 1.325-1.957 2.693v5.189H8.564V8.241h3.127v1.433h.044c.435-.825 1.499-1.694 3.085-1.694 3.301 0 3.911 2.173 3.911 4.997v5.754z"></path>
               </svg>
@@ -177,7 +177,7 @@ function Footer() {
           </li>
         </ul>
       </div>
-      <div className="footer_in" aria-disabled>
+      <div className="footer_in">
         <div className="mainList_in">
           <h2 onClick={PurchaseBtn}>Purchase</h2>
           <h2 onClick={FinanceBtn}>Finance</h2>

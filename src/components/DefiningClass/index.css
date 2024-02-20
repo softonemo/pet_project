@@ -1,0 +1,30 @@
+.container {
+  overflow-y: hidden;
+}
+.text_block_dc {
+  position: absolute;
+  text-align: left;
+  top: 27%;
+  left: 15%;
+  color: white;
+}
+.text_block_dc h1 {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 75px;
+}
+.text_block_dc p {
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 15px;
+}
+.second_block_dc {
+  background: black;
+  color: white;
+  min-height: 2000px;
+}
+.h2_in_second_block {
+  font-family: 'Playfair Display';
+  font-size: 130px;
+  font-weight: 100;
+}

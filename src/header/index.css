@@ -53,7 +53,7 @@ img {
 }
 .blur_header {
   position: fixed;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.85);
   top: 70px;
   width: 100%;
   padding: 10px;
