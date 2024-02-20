@@ -21,10 +21,59 @@
 .second_block_dc {
   background: black;
   color: white;
-  min-height: 2000px;
+  min-height: 1500px;
 }
 .h2_in_second_block {
   font-family: 'Playfair Display';
   font-size: 130px;
   font-weight: 100;
+}
+.after_par {
+  min-height: 500px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block_with_nn {
+  width: 600px;
+  text-align: center;
+}
+.block_with_nn h2 {
+  font-family: 'Playfair Display';
+  font-weight: 300;
+  font-size: 90px;
+}
+.block_with_nn p {
+  /* font-family: 'Playfair Display'; */
+  font-weight: 200;
+  margin-top: 20px;
+}
+.aboutFirst_merc_dc,
+.preBlock {
+  display: flex;
+  gap: 200px;
+  background-color: black;
+  color: white;
+  justify-content: end;
+}
+.aboutFirst_merc_dc img {
+  width: 546px;
+}
+.left_side_dc img {
+  margin-top: 200px;
+}
+.left_side_dc h2 {
+  font-size: 50px;
+  font-weight: 400;
+}
+.left_side_dc,
+.right_side_dc {
+  width: 546px;
+}
+.preBlock {
+  margin-top: 150px;
+  display: flex;
 }
