@@ -83,20 +83,22 @@ function MainPage() {
             <h3>Welcome To Beyond</h3>
             <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
               <p>Welcome to Merceders-Maybach.</p>
-              <button className="button_discover_more">
-                Discover more
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  className="brandhub-relaunch-button__icon"
-                >
-                  <path
-                    fill="currentColor"
-                    fill-rule="evenodd"
-                    d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
-                  ></path>
-                </svg>
-              </button>
+              <Link to='/welcome'>
+                <button className="button_discover_more">
+                  Discover more
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    className="brandhub-relaunch-button__icon"
+                  >
+                    <path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="m9.121 19.728-.707-.707 7.07-7.071-7.07-7.071.707-.707 7.07 7.07h.001l.707.708-7.778 7.778Z"
+                    ></path>
+                  </svg>
+                </button >
+              </Link>
             </div>
           </div>
         </section>

@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@300;400&family=Playfair+Display:wght@400..900&family=Protest+Riot&display=swap');
+.welcome_main {
+  overflow-x: hidden;
+}
+.first_block {
+  margin-top: 140px;
+  height: calc(100vw - 800px);
+  background: white;
+  text-align: center;
+  overflow: hidden;
+}
+.first_block h1 div {
+  font-family: 'Playfair Display' !important;
+  font-weight: 100;
+  font-size: 400px;
+  -webkit-text-stroke: 1px black;
+  color: white;
+  margin-left: -20px;
+  overflow: hidden;
+}
+.first_block h2 div {
+  position: absolute;
+  font-family: 'Playfair Display' !important;
+  font-weight: 200;
+  font-size: 200px;
+  top: 40%;
+  left: 25%;
+  z-index: 2;
+}
+.section_karaoke {
+  width: 100vw;
+  padding: 180px 100px;
+  /* height: 500vh; */
+}
+.karaoke {
+  width: 768px;
+  text-align: left;
+  color: #000;
+  /* position: fixed; */
+  /* top: 50%;
+  left: 50%; */
+  /* width: 85%; */
+  /* transform: translate(-50%, -50%); */
+}
+.karaoke span {
+  font-size: 70px;
+  background: linear-gradient(to right, #000 50%, #858484 50%) 0 0 / 200% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: slice;
+  font-family: 'Playfair Display';
+}
+.allBlock {
+  background: white;
+  padding: 325px 135px 100px;
+  overflow: hidden;
+}
+.sides {
+  display: flex;
+  margin-top: 500px;
+  gap: 150px;
+}
+.sides img {
+  width: 547px;
+}
+.left_side div:first-child img {
+  margin-top: 170px;
+}
+.sides div div {
+  text-align: left;
+}
+.sides h3 {
+  font-family: 'Playfair Display';
+  font-size: 45px;
+  font-weight: 300;
+  line-height: 40px;
+  margin-top: 20px;
+}
+.sides p {
+  font-family: sans;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.right_side div:last-child img {
+  margin-top: 400px;
+}
+.left_side div:last-child img {
+  margin-top: 230px;
+}
+.white_block {
+  width: 100%;
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.white_block p {
+  margin-left: 30px;
+  font-family: 'Playfair Display';
+  font-weight: 100;
+  font-size: 100px;
+}

@@ -8,15 +8,19 @@
   left: 15%;
   color: white;
 }
-.text_block_dc h1 {
+.text_block_dc h1 p {
   font-family: 'Playfair Display';
   font-weight: 500;
-  font-size: 75px;
+  font-size: 80px;
+  line-height: 70px;
+}
+.text_block_dc h1 {
+  overflow: hidden;
 }
 .text_block_dc p {
   font-family: sans-serif;
   font-size: 15px;
-  margin-top: 15px;
+  margin-top: 20px;
 }
 .second_block_dc {
   background: black;
@@ -47,17 +51,17 @@
   font-size: 90px;
 }
 .block_with_nn p {
-  /* font-family: 'Playfair Display'; */
+  font-family: 'Playfair Display';
   font-weight: 200;
   margin-top: 20px;
 }
 .aboutFirst_merc_dc,
 .preBlock {
   display: flex;
-  gap: 200px;
+  gap: 300px;
   background-color: black;
   color: white;
-  justify-content: end;
+  justify-content: right;
 }
 .aboutFirst_merc_dc img {
   width: 546px;
@@ -65,15 +69,76 @@
 .left_side_dc img {
   margin-top: 200px;
 }
-.left_side_dc h2 {
+.left_side_dc h2:first-child {
   font-size: 50px;
   font-weight: 400;
 }
 .left_side_dc,
 .right_side_dc {
   width: 546px;
+  text-align: left;
+}
+.left_side_dc div:first-child {
+  width: 546px;
+}
+.left_side_dc div:first-child h2 {
+  display: flex;
+  overflow: hidden;
+}
+.left_side_dc div:first-child h2 p {
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 45px;
+  margin-left: 15px;
 }
 .preBlock {
   margin-top: 150px;
   display: flex;
+}
+.right_side_dc div h2,
+.left_side_dc div h2 {
+  font-family: 'Playfair Display';
+  font-weight: 200;
+  font-size: 40px;
+}
+.right_side_dc p,
+.left_side_dc p {
+  /* font-family: 'Playfair Display'; */
+  font-weight: 200;
+  font-size: 20px;
+  margin-top: 20px;
+}
+.right_side_dc div,
+.left_side_dc div {
+  width: 400px;
+  margin-top: 150px;
+}
+.left_side_dc div:last-child img {
+  margin-top: 0;
+}
+.right_side_dc div:nth-child(3) img {
+  margin-top: 300px;
+}
+.section_karaoke {
+  width: 100vw;
+  padding: 180px 100px;
+  /* height: 500vh; */
+}
+.karaoke {
+  width: 768px;
+  text-align: left;
+  color: #000;
+  /* position: fixed; */
+  /* top: 50%;
+  left: 50%; */
+  /* width: 85%; */
+  /* transform: translate(-50%, -50%); */
+}
+.karaoke span {
+  font-size: 70px;
+  background: linear-gradient(to right, #000 50%, #858484 50%) 0 0 / 200% 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: slice;
+  -webkit-box-decoration-break: slice;
 }

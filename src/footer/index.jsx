@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, {  useState } from 'react';
 import './index.css';
 
-function Footer() {
+function Footer({followBlock}) {
   const [purchaseYes, setPurchaseYes] = useState('100%');
   const [financeYes, setFinanceYes] = useState(0);
   const [servicesYes, setServicesYes] = useState(0);
@@ -26,7 +26,7 @@ function Footer() {
         <h1>Mercedes Benz</h1>
         <p>Car is car but Mercedes-Benz is expensive brand.</p>
       </div>
-      <div className="containUS">
+      <div className="containUS" ref={followBlock}>
         <h1>
           <p
             data-aos="fade-down"

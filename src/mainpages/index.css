@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@300;400&family=Playfair+Display:ital,wght@0,500;1,500&family=Protest+Riot&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .container {
   overflow-x: hidden;
 }
